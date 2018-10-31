@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .error-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            box-shadow: 4px 5px 5px rgba(0, 0, 0, .2);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="alert alert-danger text-center py-5 px-5 error-box" role="alert">
+                    <h4 class="alert-heading text-center">Error!</h4>
+                    Please check your input values.
+                  </div>
+    
+        <h2 class="display-3 text-center py-4">Project Suggestions</h2>
+        <div class="card mb-3 align-middle">
+        <div class="list-group px-3 py-4 mb-5">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between border-success">
+                    <h5 class="mb-1 project-name">Project One</h5>
+                    <small class="project-tools">2 days ago</small>
+                </div>
+                <div class="">
+                    <p class="mb-1 project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, consequuntur?</p>
+                    <button type="button" class="btn btn-outline-danger btn-sm">Remove</button>
+                </div>
+                
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 project-name">Project One</h5>
+                        <small class="project-tools">2 days ago</small>
+                    </div>
+                    <p class="mb-1 project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, consequuntur?</p>
+                    
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 project-name">Project One</h5>
+                            <small class="project-tools">2 days ago</small>
+                        </div>
+                        <p class="mb-1 project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, consequuntur?</p>
+                        
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1 project-name">Project One</h5>
+                                <small class="project-tools">2 days ago</small>
+                            </div>
+                            <p class="mb-1 project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, consequuntur?</p>
+                            
+                        </a>
+        </div>
+        </div>
+
+        <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Project Name</span>
+                </div>
+                <input type="text" class="form-control input-name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+
+              <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Project Description</span>
+                    </div>
+                    <input type="text" class="form-control input-desc" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-sm">Tools Used</span>
+                        </div>
+                        <input type="text" class="form-control input-tools" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                      <div class="d-flex w-100 justify-content">
+                          <button class="btn btn-primary btn-lg w-20 mx-auto mb-4 add-btn">Add Project Idea</button>
+                          <button class="btn btn-success btn-lg w-20 mx-auto mb-4 update-btn">Update Project Detail(s)</button>
+                      </div>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
